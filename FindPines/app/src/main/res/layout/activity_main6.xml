@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:padding="24dp"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vouchers"
+        android:text="Vouchers"
+        android:background="#40ffffff"
+        android:textColor="@color/green"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="50dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/diffvouchers"
+        android:layout_width="366dp"
+        android:layout_height="307dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/voucherA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Jollibee - 10% off "
+            android:textColor="@color/green" />
+
+        <Button
+            android:id="@+id/voucherB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Good Taste - Less PHP 100"
+            android:textColor="@color/green" />
+
+        <Button
+            android:id="@+id/voucherC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Less 200 (Min. Spend 999)"
+            android:textColor="@color/green" />
+
+        <Button
+            android:id="@+id/voucherD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Starbucks - Less PHP 50"
+            android:textColor="@color/green" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/redeem"
+        android:text="Redeem"
+        android:backgroundTint="@color/green2"
+        android:layout_below="@id/diffvouchers"
+        android:layout_margin="50dp"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>
